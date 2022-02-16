@@ -82,4 +82,9 @@ body {
     .container.gallery-container {
         border-radius: 0;
     }
+    .title{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-style: italic;
+    }
 }
