@@ -5,6 +5,29 @@ body {
     padding: 60px 0;
     -webkit-touch-callout: none;
 }
+.btn{
+    text-decoration: none;
+    font-size:2rem;
+    color:white;
+    padding:10px 20px 10px 20px;
+    margin-bottom: 5%;
+    margin-left: 40%;
+    display:inline-block;
+    border-radius: 10px;
+    transition:all 0.1s;
+    /* text-shadow: 0px -2px rgb(0, 0, 0); */
+    
+  }
+  .btn:active{
+    transform: translateY(3px);
+  }
+  .btn.blue{
+    background-color: #1fd992;
+    border-bottom:5px solid #1cbe80;
+  }
+  .btn.blue:active{
+    border-bottom:2px solid #1cbe80;
+  }
 
 .container.gallery-container {
     background-color: #fff;
@@ -102,4 +125,27 @@ body {
         
         
     }
+    .btn{
+        text-decoration: none;
+        font-size:2rem;
+        color:white;
+        padding:10px 20px 10px 20px;
+        margin-bottom: 5%;
+        margin-left: 35%;
+        display:inline-block;
+        border-radius: 10px;
+        transition:all 0.1s;
+        /* text-shadow: 0px -2px rgb(0, 0, 0); */
+        
+      }
+      .btn:active{
+        transform: translateY(3px);
+      }
+      .btn.blue{
+        background-color: #1fd992;
+        border-bottom:5px solid #1cbe80;
+      }
+      .btn.blue:active{
+        border-bottom:2px solid #1cbe80;
+      }
 }
