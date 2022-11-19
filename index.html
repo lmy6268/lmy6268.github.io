@@ -1,326 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <style>
+        .btn {
+            position : absolute;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            padding: 10px 20px 0 20px;
+            display: block;
+            border-radius: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            transition: all 0.1s;
+            /* text-shadow: 0px -2px rgb(0, 0, 0); */
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>다담 미니 전시회 </title>
-    <script type="text/javascript">
-        $(document).bind("contextmenu", function (e) {
-            return false;
-        });
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-40D94B6C65"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
         }
-        gtag('js', new Date());
 
-        gtag('config', 'G-40D94B6C65');
-    </script>
-    <script src="https://kit.fontawesome.com/946696b7e4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="gallery-grid.css">
+        .btn:active {
+            transform: translateY(3px);
+            font-weight: bold;
+            background-color: green;
+        }
 
+        .btn.blue {
+            background-color: rgba(255, 255, 255,0.5);
+            left: 80%;
+            top: 10%
+        }
 
+        .btn.blue:active {
+            border-bottom: 2px solid green;
+            background-color: rgb(0, 128, 0);
+        }
+        @media(max-width: 840px) {
+            .btn.blue {
+                background-color: rgba(255, 255, 255,0.8);
+            left: 40%;
+            top:80%;
+            }   
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Serif&family=Noto+Serif+KR:wght@200&display=swap');
+        </style>
+    <meta name="author" content="" />
+    <title>The Big Picture - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-
-    <div class="container gallery-container">
-        <img class="logo" src="로고.png" width="50px" />
-        <h1>다담 미니 전시회</h1>
-
-        <p class="page-description">
-            장소 : 강남교회 본당 2.5F - 3F
-            <br>
-            <br>
-            시간 : 11월 20일 PM 1:20 - 2:00
-        </p>
-
-        <div class="tz-gallery">
-            <div class="row">
-                <h2 class="title">2.5F</h2>
-
-                <!-- 1 : 겨울 마중-->
-                <div class="col-sm-12 col-md-6">
-                    <a class="lightbox" href="../dadam/A6/A6Pic10.jpg" onContextMenu="return false;" data-caption="&lt;h3  style = 'font-family : Times New Roman'' &gt; 
-                    『 겨울 마중 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                        &lt;br&gt;작년 이맘때 춘천 소양강에서 찍은 오리배입니다.
-                        &lt;br&gt;차가운 겨울바다지만, 오리배에 딱 빛이 들어오는 모습을 보니 따뜻해보였습니다.    
-                        &lt;/p&gt;
-                        &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt;by 혜빈 &lt;/h5&gt;&lt;br&gt;"
-                        
-                        >
-
-                        <img class="vertical" src="../dadam/A6/A6Pic10.jpg" alt="A3_10" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 2 : 롯데월드 - 동준-->
-                <div class="col-sm-12 col-md-6">
-                    <a class="lightbox" href="../dadam/A6/A6Pic2.jpg" onContextMenu="return false;">
-                        <img class="vertical" src="../dadam/A6/A6Pic2.jpg" alt="A6_2" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 3 : 용산공원 - 하은-->
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic9.jpg" onContextMenu="return false;">
-                        <img class="vertical" src="../dadam/A6/A6Pic9.jpg" alt="A3_9" onContextMenu="return false;">
-                    </a>
-                </div>
-
-                <!-- 4 : 방화수류정 - 혜빈-->
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic12.jpg" onContextMenu="return false;"
-                    data-caption="&lt;h3  style = 'font-family : Serif' &gt; 
-                    『 초록빛 물결 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt;
-                    푸릇푸릇한 여름의 방화수류정을 거위와 함께 담아봤습니다
-                    &lt;br&gt;
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 혜빈 &lt;/h5&gt;&lt;br&gt;"
-                    >
-                        <img class="vertical" src="../dadam/A6/A6Pic12.jpg" alt="A3_12" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 5: 노을빛 열차 - 동준 -->
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic13.jpg" onContextMenu="return false;">
-                        <img class="vertical" src="../dadam/A6/A6Pic13.jpg" alt="A3_13" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 6:  흔들리는 세상 속 빛 - 석기-->
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic1.jpg" onContextMenu="return false;" data-caption="&lt;h3  style = 'font-family : Serif' &gt; 
-                    『 흔들리는 세상 속 빛 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt;
-                    고난과 역경을 흔들림으로 나타내었습니다.
-                    &lt;br&gt; 그리고 그 때 우리의 시선이 향해야 할 한 곳, 십자가를 같이 담았습니다.    
-                    &lt;br&gt;
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 석기 &lt;/h5&gt;&lt;br&gt;">
-                        <img class="vertical" src="../dadam/A6/A6Pic1.jpg" alt="A6_1" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 7: 번개 - 동준 -->
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic14.jpg" onContextMenu="return false;">
-                        <img class="vertical" src="../dadam/A6/A6Pic14.jpg" alt="A3_14" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 8 : 한강 - 혜미 -->
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic4.jpg" onContextMenu="return false;">
-                        <img class="vertical" src="../dadam/A6/A6Pic4.jpg" alt="A3_4" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 9: 충분히 잘해내고 있단다 - 규연-->
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic3.jpg" onContextMenu="return false;"
-                    data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『 충분히 잘 해내고 있단다. 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt; 카메라를 들고 해방촌을 배회하던 그날, 유난히 내 눈에 들어온 모자가 있었다.
-                    &lt;br&gt; 이야기가 오가는 듯  보이진 않았지만, 그들에 나누는 비언어적 모습을 보며, 
-                    &lt;br&gt; 그들의 사랑을 느꼈다. 그리고 서서히 멀어지는 그 지점에 이르렀을 때, 
-                    &lt;br&gt; 저 멀리 아들의 어깨에 손을 살며시 올리며, 격려하는 듯한 엄마의 모습을 보았다.
-                    &lt;br&gt; 충분히 잘해내고 있어 라는 말이 내게 들리는 듯 했다.
-                    
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 규연 &lt;/h5&gt;&lt;br&gt;"
-                    >
-                        <img class="vertical" src="../dadam/A6/A6Pic3.jpg" alt="A3_3" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 10: 봄날의 기억  -->
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic8.jpg" onContextMenu="return false;"
-                    data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『 봄날의 기억 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans' &gt;
-                    &lt;br&gt;  올해 4월에 무계획으로 부산에 가서 담아온 벚꽃길입니다.
-                    &lt;br&gt;  일본의 벚꽃 거리 느낌이 낭낭하게 나는 동네여서 더 기억에 남는 것 같습니다.
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 혜빈 &lt;/h5&gt;&lt;br&gt;"
-                    >
-                        <img class="vertical" src="../dadam/A6/A6Pic8.jpg" alt="A3_8" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 10 -->
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic15.jpg" onContextMenu="return false;"
-                    data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『 슬며시 스며드는 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt; 후덥지근한 여름날 오후 5시, 그 때는 햇살이 따사로웠다.
-                    &lt;br&gt; 베란다에 열어둔 문 틈새로 슬며시 빛은 다가왔다.
-                    &lt;br&gt; 빛은 물체에게 생명을 불어넣어주는 것 같다. 
-                    &lt;br&gt; 그 때의 생동하던 그 빛을 조금이라도 담아보고자 
-                    &lt;br&gt; 나는 카메라를 들어, 슬며시 물체에 빛이 스며들기를 기다렸다.
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 규연 &lt;/h5&gt;&lt;br&gt;"
-                    
-                    >
-                        <img class="vertical" src="../dadam/A6/A6Pic15.jpg" alt="A6_15" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 11 -->
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic11.jpg" onContextMenu="return false;"
-                    data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『 봄사슴 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt; 이제는 서울 벚꽃명소로 너무 유명해진 서울숲 사슴 방사장의 모습입니다. 
-                    &lt;br&gt;사람이 벚꽃보다 많지만, 귀여운 사슴이 있고 접근성이 좋아서 개인적으로 애정하는 장소입니다.
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 혜빈 &lt;/h5&gt;&lt;br&gt;"
-                    >
-                        <img class="vertical" src="../dadam/A6/A6Pic11.jpg" alt="A6_11" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 13 -->
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic7.jpg" onContextMenu="return false;">
-                        <img class="vertical" src="../dadam/A6/A6Pic7.jpg" alt="A6_7" onContextMenu="return false;">
-                    </a>
-                      <a class="lightbox" href="../dadam/A6/A6Pic5.jpg" onContextMenu="return false;">
-                        <img class="vertical" src="../dadam/A6/A6Pic5.jpg" alt="A6_5" onContextMenu="return false;">
-                    </a>
-                </div>
-                <!-- 15 -->
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../dadam/A6/A6Pic6.jpg" onContextMenu="return false;">
-                        <img class="vertical" src="../dadam/A6/A6Pic6.jpg" alt="A6_6" onContextMenu="return false;">
-                    </a>
+    <!-- Page Content-->
+    <section>
+        <div class="container px-4 px-lg-5 Detail">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6">
+                    <h1 class="mt-5" style="font-weight: bold; font-family: 'Noto Serif KR', serif; text-align: center;">다담 : 다솔이 담다</h1>
+                    <p style="font-family: 'Noto Sans KR', sans-serif;text-align: center;">
+                        <br>
+                        사진동아리 다담에서 진행하는
+                        <br>
+                        제 1회 미니 전시회에 오신 여러분을 환영합니다.
+                        <br>
+                    </p>
                 </div>
             </div>
-            
-            <h2 class="title">3F</h2>
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <a class="lightbox" href="../dadam/A3/A3Pic2.jpg" onContextMenu="return false;" data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『  빛으로 그려보는 우리의 이름 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt; 9월의 경복궁 출사 중에 서로가 힘을 합쳐 만들어낸 다담 사인.
-                    &lt;br&gt;
-                    서로가 가진 불빛이 모여 우리의 이름을 어둠 가운데 그려내본다.
-                    &lt;br&gt;
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 규연 &lt;/h5&gt;&lt;br&gt;"
-                    
-                    >
-                        <!-- 캡션 작성  -->
-                        <img class="horizontal" src="../dadam/A3/A3Pic2.jpg" alt="A3_2" />
-                    </a>
-                    <a class="lightbox" href="../dadam/A3/A3Pic1.jpg" onContextMenu="return false;"
-                    data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『 행복을 기록해 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt; 매번 다같이 모이기 어렵지만, 어렵사리 만난 만큼 덧없이 행복한 우리.
-                    &lt;br&gt; 서로에게 따스한 시선으로 나아가고, 그 시선들이 사진에 녹아들길 간절히 바래본다.
-                    &lt;br&gt;
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 동준 &lt;/h5&gt;&lt;br&gt;"
-                    >
-                        <img class="horizontal" src="../dadam/A3/A3Pic1.jpg" alt="A3_1" onContextMenu="return false;">
-                    </a>
-                </div>
-
-                <div class="col-sm-6 col-md-4" onContextMenu="return false;">
-                    <a class="lightbox" href="../dadam/A3/A3Pic4.jpg" onContextMenu="return false;"
-                    data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『 청량하디 청량한 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt; 어느 날이 맑던 한 여름날, 우리는 하늘공원으로 향했다.
-                    &lt;br&gt; 바람 한 점 안 불던 그날, 태양은 너무나 뜨거웠고 땀은 온몸을 적셨다. 
-                    &lt;br&gt; 그러나 다담과 함께했던 출사였기에 그 더위조차 우리의 즐거움을 막지 못했다.
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 규연 &lt;/h5&gt;&lt;br&gt;"
-                    >
-                        <img class="vertical" src="../dadam/A3/A3Pic4.jpg" alt="Tunnel">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4" onContextMenu="return false;">
-                    <a class="lightbox" href="../dadam/A3/A3Pic5.jpg" onContextMenu="return false;"
-                    data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『 Memories 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt; 다담에서 처음 출사를 나가던 그날, 어디갈까 고민하던 그 찰나에 정했던 용산공원.
-                    &lt;br&gt; 서울 도심속에서 발견했던 그 이국적인 모습을 사진으로 담아내본다.
-                    &lt;br&gt; 
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 규연 &lt;/h5&gt;&lt;br&gt;"
-                    >
-                        <img class="vertical" src="../dadam/A3/A3Pic5.jpg" alt="Tunnel">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4" onContextMenu="return false;">
-                    <a class="lightbox" href="../dadam/A3/A3Pic3.jpg" onContextMenu="return false;"
-                    data-caption="
-                    &lt;h3  style = 'font-family :Times New Roman' &gt;  
-                    『 든든해 』 &lt;/h3&gt; 
-                    &lt;p style = 'font-family : Droid Sans ; font-size :13px' &gt;
-                    &lt;br&gt; 출사길 위에 저들과 함께여서 순간들이 행복하다.
-                    &lt;br&gt; 누군가의 순간을 담을 수 있다는 것에 감사하며, 
-                    &lt;br&gt; 또 그들이 담아준 나의 모습이 있어 감사하다. 
-                    &lt;br&gt; 참 든든한 공동체야. 
-                    &lt;/p&gt;
-                    &lt;h5 style = 'font-style:italic;font-family: Times New Roman'&gt; by 규연 &lt;/h5&gt;&lt;br&gt;"
-                    >
-                        <img class="vertical" src="../dadam/A3/A3Pic3.jpg" alt="A3_1" onContextMenu="return false;">
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- 문자열에 태그 입력 가능 ( &lt , &gt 이용) -->
-
         </div>
-        <!-- <a class="btn blue" href="https://forms.gle/Qq73scVHSefZPKwz9">구매하러 가기</a> -->
+    </section>
 
-    </div>
-    <div class="credit">
-        <br>
-        <h6>copyrightⓒ 2022 All rights reserved by Dadam
-            <br>
-            <br>
-            다솔이 담다, 다담
-        </h6>
-        <h3><a class="insta" href="https://www.instagram.com/dadam._.e/">
-                <i class="fa-brands fa-instagram-square "></i>
-                dadam._.e
-            </a>
-        </h3>
-    </div>
-
-    <!-- 데이터 -->
-    <script src="baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <a class="btn blue" href="./index00.html" style="display: inline; ">> 전시 보러 가기</a>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
